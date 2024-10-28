@@ -42,9 +42,9 @@
       "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
     },
   
-    // toggle terminal
+    // toggle terminal 
     {
-      "key": "shift+t",
+      "key": "ctrl+t",
       "command": "workbench.action.terminal.toggleTerminal",
       "when": "terminal.active"
     },
