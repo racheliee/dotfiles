@@ -1,0 +1,120 @@
+// Place your key bindings in this file to override the defaults
+[
+    // toggle sidebar
+    {
+      "key": "ctrl+b",
+      "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+      "key": "cmd+b",
+      "command": "-workbench.action.toggleSidebarVisibility"
+    },
+  
+    // formatting (capslock + q + f with karabiner mappings)
+    {
+      "key": "ctrl+shift+alt+cmd+f17",
+      "command": "notebook.formatCell",
+      "when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+      "key": "shift+alt+f",
+      "command": "-notebook.formatCell",
+      "when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+      "key": "ctrl+shift+alt+cmd+f17",
+      "command": "editor.action.formatDocument",
+      "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+      "key": "shift+alt+f",
+      "command": "-editor.action.formatDocument",
+      "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+      "key": "ctrl+shift+alt+cmd+f17",
+      "command": "editor.action.formatDocument.none",
+      "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+    },
+    {
+      "key": "shift+alt+f",
+      "command": "-editor.action.formatDocument.none",
+      "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+    },
+  
+    // toggle terminal
+    {
+      "key": "shift+t",
+      "command": "workbench.action.terminal.toggleTerminal",
+      "when": "terminal.active"
+    },
+    {
+      "key": "ctrl+`",
+      "command": "-workbench.action.terminal.toggleTerminal",
+      "when": "terminal.active"
+    },
+  
+    // maximize current view
+    {
+      "key": "ctrl+shift+alt+cmd+k",
+      "command": "workbench.action.toggleMaximizeEditorGroup",
+      "when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups"
+    },
+    {
+      "key": "cmd+k cmd+m",
+      "command": "-workbench.action.toggleMaximizeEditorGroup",
+      "when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups"
+    },
+  
+    // move editors
+    // cmd + shift + tab --> moves the tabs within view
+    // ctrl + tab --> you can choose tab withing group
+    {
+      "key": "shift+alt+tab",
+      "command": "workbench.action.nextEditor"
+    },
+    {
+      "key": "shift+cmd+]",
+      "command": "-workbench.action.nextEditor"
+    },
+    {
+      "key": "ctrl+shift+tab",
+      "command": "workbench.action.nextEditorInGroup"
+    },
+    {
+      "key": "cmd+k alt+cmd+right",
+      "command": "-workbench.action.nextEditorInGroup"
+    },
+    {
+      "key": "alt+cmd+right",
+      "command": "-workbench.action.nextEditor"
+    },
+    {
+      "key": "shift+alt+tab",
+      "command": "workbench.action.openNextRecentlyUsedEditor"
+    },
+    // move editor to next group
+    {
+      "key": "alt+cmd+tab",
+      "command": "workbench.action.moveEditorToNextGroup"
+    },
+    {
+      "key": "ctrl+cmd+right",
+      "command": "-workbench.action.moveEditorToNextGroup"
+    },
+    // change focus to next group
+    {
+      "key": "shift+tab",
+      "command": "workbench.action.focusNextGroup"
+    },
+    // project manager - list projecrs
+    {
+      "key": "shift+cmd+o",
+      "command": "projectManager.listProjects"
+    },
+    {
+      "key": "alt+cmd+p",
+      "command": "-projectManager.listProjects"
+    }
+  ]
+  

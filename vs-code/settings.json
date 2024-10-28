@@ -1,0 +1,240 @@
+{
+  // theme
+  "workbench.colorTheme": "One Monokai",
+
+  // copilot
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": "true",
+    "markdown": true,
+    "scminput": false
+  },
+  "github.copilot.preferredAccount": "racheliee",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.advanced": {},
+
+  // project manager
+  "projectManager.groupList": true,
+  "projectManager.git.baseFolders": [ // project managet finds git projects in these folders
+    "Users/rachelie/project", // personal projects
+    "Users/rachelie/uni" // uni projects
+  ],
+  "projectManager.tags": ["Personal", "Work", "Uni"],
+  "projectManager.git.maxDepthRecursion": 1, // only look at 1 level deep for git projects
+  "projectManager.any.baseFolders": [ // project manager finds any projects in these folders
+    "/Users/rachelie/project"
+  ],
+  "projectManager.any.maxDepthRecursion": 1, // only look at 1 level deep for any projects
+
+  // code runner
+  "code-runner.runInTerminal": true,
+
+  "terminal.integrated.inheritEnv": false,
+
+  // python interpreter set to miniforge conda
+  "python.defaultInterpreterPath": "/opt/homebrew/Caskroom/miniforge/base/envs/pyenv/bin/python",
+  "cmake.configureOnOpen": true,
+
+  // c++ configurations
+  "C_Cpp.clang_format_fallbackStyle": "{BasenOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+  "C_Cpp.default.cppStandard": "c++17",
+  "[cpp]": {
+    "editor.wordBasedSuggestions": "off",
+    "editor.suggest.insertMode": "replace",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "code-runner.executorMap": {
+    "cpp": "cd $dir && g++ -std=c++17 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+  },
+
+  //R options
+  "r.rpath.mac": "/opt/homebrew/Caskroom/miniforge/base/envs/renv/bin/R",
+  "r.rterm.mac": "/opt/homebrew/Caskroom/miniforge/base/envs/renv/bin/radian",
+
+  "json.schemas": [],
+
+  // formatters
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  // dart configurations
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off"
+  },
+  "redhat.telemetry.enabled": false,
+  "[liquid]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "python.createEnvironment.trigger": "off",
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "editor.largeFileOptimizations": false,
+  "[sql]": {
+    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+  },
+
+  // todo-tree configurations
+  "todo-tree.highlights.foregroundColourScheme": [
+    "white",
+    "white",
+    "black",
+    "pink"
+  ],
+  "todo-tree.highlights.customHighlight": {
+    "checklist": {
+      "background": "#20a904",
+      "foreground": "#ffffff",
+      "gutterIcon": true,
+      "icon": "check-circle-fill",
+      "iconColour": "#20a904",
+      "type": "text"
+    },
+    "note": {
+      "background": "#56b0dd",
+      "foreground": "#ffffff",
+      "gutterIcon": true,
+      "icon": "star-fill",
+      "iconColour": "#ffc404",
+      "type": "text"
+    },
+    "todo": {
+      "background": "#b782f9",
+      "foreground": "#ffffff",
+      "gutterIcon": true,
+      "icon": "pin",
+      "iconColour": "#b782f9",
+      "type": "text"
+    },
+    "TODO": {
+      "background": "#b782f9",
+      "foreground": "#ffffff",
+      "gutterIcon": true,
+      "icon": "pin",
+      "iconColour": "#b782f9",
+      "type": "text"
+    },
+    "warning": {
+      "background": "#ffc404",
+      "foreground": "#ffffff",
+      "gutterIcon": true,
+      "icon": "alert",
+      "iconColour": "#ff9f04"
+    },
+    "[ ]": {
+      "background": "#f87364",
+      "foreground": "#ffffff",
+      "gutterIcon": true,
+      "icon": "x",
+      "iconColour": "#f87364",
+      "type": "text"
+    },
+    "[x]": {
+      "background": "#20a904",
+      "foreground": "#ffffff",
+      "gutterIcon": true,
+      "icon": "check",
+      "iconColour": "#20a904",
+      "type": "text"
+    },
+    "fixme": {
+      "background": "#f87364",
+      "foreground": "#ffffff",
+      "gutterIcon": true,
+      "icon": "alert",
+      "iconColour": "#f87364",
+      "type": "text"
+    },
+    "comeback": {
+      "background": "#91d0b3",
+      "foreground": "#ffffff",
+      "gutterIcon": true,
+      "icon": "telescope",
+      "iconColour": "#91d0b3",
+      "type": "text"
+    }
+  },
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "fixme",
+    "todo",
+    "XXX",
+    "[ ]",
+    "[x]",
+    "comeback",
+    "note",
+    "checklist",
+    "warning",
+    "TODO"
+  ],
+  "todo-tree.filtering.scopes": [],
+
+  // terminal
+  "terminal.integrated.profiles.osx": {
+    "bash": {
+      "path": "bash",
+      "args": ["-l"],
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "zsh",
+      "args": ["-l"]
+    },
+    "fish": {
+      "path": "fish",
+      "args": ["-l"]
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    }
+  },
+
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  },
+
+  // git configurations
+  "git.ignoreRebaseWarning": true,
+
+  // bracket pair colorizer
+  "editor.guides.bracketPairs": true,
+
+  // tabnine configurations
+  "tabnine.experimentalAutoImports": true,
+
+  // typescript configurations
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  "workbench.settings.applyToAllProfiles": []
+}
