@@ -20,7 +20,7 @@
     "Users/rachelie/uni" // uni projects
   ],
   "projectManager.tags": ["Personal", "Work", "Uni"],
-  "projectManager.git.maxDepthRecursion": 1, // only look at 1 level deep for git projects
+  "projectManager.git.maxDepthRecursion": 2, // only look at 1 level deep for git projects
   "projectManager.any.baseFolders": [ // project manager finds any projects in these folders
     "/Users/rachelie/project"
   ],
