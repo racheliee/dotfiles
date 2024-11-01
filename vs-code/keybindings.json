@@ -104,7 +104,7 @@
   },
   // change focus to next group
   {
-    "key": "shift+tab",
+    "key": "alt+tab",
     "command": "workbench.action.focusNextGroup"
   },
   // project manager - list projects
@@ -120,5 +120,5 @@
   {
     "key": "ctrl+shift+c",
     "command": "github.copilot.toggleCopilot"
-  }
+  },
 ]
