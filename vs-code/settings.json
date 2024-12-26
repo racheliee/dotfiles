@@ -1,41 +1,18 @@
 {
-  // theme
-  "workbench.colorTheme": "One Monokai",
-
-  // copilot
   "github.copilot.enable": {
     "*": true,
     "plaintext": "true",
     "markdown": true,
     "scminput": false
   },
-  "github.copilot.preferredAccount": "racheliee",
-  "github.copilot.editor.enableAutoCompletions": true,
-  "github.copilot.advanced": {},
-
-  // project manager
-  "projectManager.groupList": true,
-  "projectManager.git.baseFolders": [ // project managet finds git projects in these folders
-    "Users/rachelie/project", // personal projects
-    "Users/rachelie/uni" // uni projects
-  ],
-  "projectManager.tags": ["Personal", "Work", "Uni"],
-  "projectManager.git.maxDepthRecursion": 2, // only look at 1 level deep for git projects
-  "projectManager.any.baseFolders": [ // project manager finds any projects in these folders
-    "/Users/rachelie/project"
-  ],
-  "projectManager.any.maxDepthRecursion": 1, // only look at 1 level deep for any projects
-
-  // code runner
   "code-runner.runInTerminal": true,
-
   "terminal.integrated.inheritEnv": false,
-
-  // python interpreter set to miniforge conda
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "redhat.telemetry.enabled": false,
   "python.defaultInterpreterPath": "/opt/homebrew/Caskroom/miniforge/base/envs/pyenv/bin/python",
   "cmake.configureOnOpen": true,
-
-  // c++ configurations
   "C_Cpp.clang_format_fallbackStyle": "{BasenOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
   "C_Cpp.default.cppStandard": "c++17",
   "[cpp]": {
@@ -44,21 +21,6 @@
     "editor.semanticHighlighting.enabled": true,
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
-  "code-runner.executorMap": {
-    "cpp": "cd $dir && g++ -std=c++17 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
-  },
-
-  //R options
-  "r.rpath.mac": "/opt/homebrew/Caskroom/miniforge/base/envs/renv/bin/R",
-  "r.rterm.mac": "/opt/homebrew/Caskroom/miniforge/base/envs/renv/bin/radian",
-
-  "json.schemas": [],
-
-  // formatters
-  "[c]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
-  },
-  // dart configurations
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -68,43 +30,44 @@
     "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": "off"
   },
-  "redhat.telemetry.enabled": false,
-  "[liquid]": {
-    "editor.defaultFormatter": "sissel.shopify-liquid"
+  "code-runner.executorMap": {
+    "cpp": "cd $dir && g++ -std=c++17 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
   },
-  "[github-actions-workflow]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[dockercompose]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "liveServer.settings.donotShowInfoMsg": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.autopep8"
-  },
-  "python.createEnvironment.trigger": "off",
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-  },
-  "editor.largeFileOptimizations": false,
-  "[sql]": {
-    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
-  },
-
-  // todo-tree configurations
+  //R options
+  "r.rpath.mac": "/opt/homebrew/Caskroom/miniforge/base/envs/renv/bin/R",
+  "r.rterm.mac": "/opt/homebrew/Caskroom/miniforge/base/envs/renv/bin/radian",
+  //
+  "github.copilot.advanced": {},
+  "json.schemas": [],
   "todo-tree.highlights.foregroundColourScheme": [
     "white",
     "white",
     "black",
     "pink"
   ],
+  "terminal.integrated.profiles.osx": {
+    "bash": {
+      "path": "bash",
+      "args": ["-l"],
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "zsh",
+      "args": ["-l"]
+    },
+    "fish": {
+      "path": "fish",
+      "args": ["-l"]
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    }
+  },
   "todo-tree.highlights.customHighlight": {
     "checklist": {
       "background": "#20a904",
@@ -192,49 +155,58 @@
     "warning",
     "TODO"
   ],
-  "todo-tree.filtering.scopes": [],
-
-  // terminal
-  "terminal.integrated.profiles.osx": {
-    "bash": {
-      "path": "bash",
-      "args": ["-l"],
-      "icon": "terminal-bash"
-    },
-    "zsh": {
-      "path": "zsh",
-      "args": ["-l"]
-    },
-    "fish": {
-      "path": "fish",
-      "args": ["-l"]
-    },
-    "tmux": {
-      "path": "tmux",
-      "icon": "terminal-tmux"
-    },
-    "pwsh": {
-      "path": "pwsh",
-      "icon": "terminal-powershell"
-    }
-  },
-
   "launch": {
     "configurations": [],
     "compounds": []
   },
-
-  // git configurations
+  "todo-tree.filtering.scopes": [],
   "git.ignoreRebaseWarning": true,
-
-  // bracket pair colorizer
   "editor.guides.bracketPairs": true,
-
-  // tabnine configurations
+  "github.copilot.editor.enableAutoCompletions": true,
   "tabnine.experimentalAutoImports": true,
-
-  // typescript configurations
+  "[liquid]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid"
+  },
   "typescript.updateImportsOnFileMove.enabled": "always",
-
-  "workbench.settings.applyToAllProfiles": []
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "python.createEnvironment.trigger": "off",
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "workbench.colorTheme": "One Monokai",
+  "github.copilot.preferredAccount": "racheliee",
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "editor.largeFileOptimizations": false,
+  "[sql]": {
+    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
+  },
+  "workbench.settings.applyToAllProfiles": [],
+  "projectManager.groupList": true,
+  "projectManager.git.baseFolders": [
+    "Users/rachelie/project",
+    "Users/rachelie/uni"
+  ],
+  "projectManager.tags": ["Personal", "Work", "Uni"],
+  "projectManager.git.maxDepthRecursion": 2,
+  "projectManager.any.baseFolders": ["/Users/rachelie/project"],
+  "projectManager.any.maxDepthRecursion": 1,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
 }

@@ -151,6 +151,10 @@ alias ucsc="ssh ypark55@unix.ucsc.edu"
 alias pgstart="brew services start postgresql@14;"
 alias pgstop="brew services stop postgresql@14"
 
+# mysql
+alias msqlst="brew services start mysql;"
+alias msqlsp="brew services stop mysql"
+
 # lsd plugin
 alias ls='lsd'
 alias lt='ls --tree'
