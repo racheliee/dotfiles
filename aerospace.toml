@@ -99,6 +99,9 @@ alt-w = 'workspace 🖥️' # Browsing
 alt-t = 'workspace 📅' # Task schedule
 alt-c = 'workspace 👩‍💻' # code
 alt-f = 'workspace 📁' # file explorer (finder)
+alt-m = 'workspace 🎧' # music
+alt-n = 'workspace 📝' # notes
+alt-s = 'workspace 💬' # social/comms
 
 # ctrl-alt-4 = 'workspace 4'
 # ctrl-alt-5 = 'workspace 5'
@@ -138,6 +141,9 @@ alt-shift-w = ['move-node-to-workspace 🖥️', 'workspace 🖥️']
 alt-shift-t = ['move-node-to-workspace 📅', 'workspace 📅']
 alt-shift-c = ['move-node-to-workspace 👩‍💻', 'workspace 👩‍💻']
 alt-shift-f = ['move-node-to-workspace 📁', 'workspace 📁']
+alt-shift-m = ['move-node-to-workspace 🎧', 'workspace 🎧']
+alt-shift-n = ['move-node-to-workspace 📝', 'workspace 📝']
+alt-shift-s = ['move-node-to-workspace 💬', 'workspace 💬']
 
 # ctrl-alt-shift-4 = 'move-node-to-workspace 4'
 # ctrl-alt-shift-5 = 'move-node-to-workspace 5'
@@ -200,6 +206,22 @@ if.app-id = 'com.apple.reminders'
 run = "move-node-to-workspace 📅"
 
 [[on-window-detected]]
+if.app-id = 'com.spotify.client'
+run = "move-node-to-workspace 🎧"
+
+[[on-window-detected]]
+if.app-id = 'notion.id'
+run = "move-node-to-workspace 📝"
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Notes'
+run = "move-node-to-workspace 📝"
+
+[[on-window-detected]]
+if.app-id = 'com.tinyspeck.slackmacgap'
+run = "move-node-to-workspace 💬"
+
+[[on-window-detected]]
 check-further-callbacks = true
 if.app-id = 'com.kakao.KakaoTalkMac'
 run = 'layout floating'
@@ -223,6 +245,9 @@ ctrl-alt-shift-j = ['join-with down', 'mode main']
 ctrl-alt-shift-k = ['join-with up', 'mode main']
 ctrl-alt-shift-l = ['join-with right', 'mode main']
 
-# workspace to monitor
+# workspace to monitors
 [workspace-to-monitor-force-assignment]
+1 = 'main'
+2 = 'main'
+3 = 'main'
 4 = ['secondary', 'dell']

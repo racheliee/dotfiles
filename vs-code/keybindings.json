@@ -2,7 +2,7 @@
 [
   // toggle sidebar
   {
-    "key": "ctrl+b",
+    "key": "f16 p",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
@@ -121,4 +121,13 @@
     "key": "ctrl+shift+c",
     "command": "github.copilot.toggleCopilot"
   },
+  // add missing imports
+  {
+    "key": "ctrl+s",
+    "command": "editor.action.sourceAction",
+    "args": {
+      "kind": "source.addMissingImports",
+      "apply": "first"
+    }
+  }
 ]

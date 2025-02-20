@@ -1,7 +1,7 @@
 {
   "github.copilot.enable": {
     "*": true,
-    "plaintext": "true",
+    "plaintext": true,
     "markdown": true,
     "scminput": false
   },
@@ -208,5 +208,19 @@
   "projectManager.any.maxDepthRecursion": 1,
   "[javascript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
-  }
+  },
+  "editor.accessibilitySupport": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.ruff": "always",
+    "source.fixAll.eslint": "always",
+    "source.convertImportFormat": "always",
+    "source.fixAll": "always",
+    "source.addMissingImports": "always"
+  },
+  "[typst]": {
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+  },
+  "[typst-code]": {
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+  },
 }
