@@ -91,7 +91,7 @@ const rules: KarabinerRules[] = [
       {
         type: "basic",
         from: {
-          key_code: "q",
+          key_code: "d",
           modifiers: {
             optional: ["any"]
           }
@@ -270,6 +270,9 @@ const rules: KarabinerRules[] = [
     },
     f: {
       to: [{ key_code: "f17" }],
+    },
+    d: {
+      to: [{ key_code: "f16" }],
     },
     q: {
       to: [

@@ -94,6 +94,8 @@ alt-1 = 'workspace 1'
 alt-2 = 'workspace 2'
 alt-3 = 'workspace 3'
 alt-4 = 'workspace 4'
+alt-5 = 'workspace 5'
+alt-6 = 'workspace 6'
 
 alt-w = 'workspace 🖥️' # Browsing
 alt-t = 'workspace 📅' # Task schedule
@@ -137,6 +139,8 @@ alt-shift-1 = ['move-node-to-workspace 1', 'workspace 1']
 alt-shift-2 = ['move-node-to-workspace 2', 'workspace 2']
 alt-shift-3 = ['move-node-to-workspace 3', 'workspace 3']
 alt-shift-4 = ['move-node-to-workspace 4', 'workspace 4']
+alt-shift-5 = ['move-node-to-workspace 5', 'workspace 5']
+alt-shift-6 = ['move-node-to-workspace 6', 'workspace 6']
 alt-shift-w = ['move-node-to-workspace 🖥️', 'workspace 🖥️']
 alt-shift-t = ['move-node-to-workspace 📅', 'workspace 📅']
 alt-shift-c = ['move-node-to-workspace 👩‍💻', 'workspace 👩‍💻']
@@ -231,6 +235,16 @@ check-further-callbacks = true
 if.app-id = 'cc.ffitch.shottr'
 run = 'layout floating'
 
+[[on-window-detected]]
+check-further-callbacks = true
+if.app-id = 'com.electron.dockerdesktop'
+run = 'layout floating'
+
+[[on-window-detected]]
+check-further-callbacks = true
+if.app-id = 'com.apple.finder'
+run = 'layout floating'
+
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 [mode.service.binding]
@@ -251,3 +265,5 @@ ctrl-alt-shift-l = ['join-with right', 'mode main']
 2 = 'main'
 3 = 'main'
 4 = ['secondary', 'dell']
+5 = ['secondary', 'dell']
+6 = ['secondary', 'dell']

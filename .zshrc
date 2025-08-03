@@ -1,4 +1,4 @@
-# If you come from bash you might have to change your $PATH.
+ # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
@@ -161,8 +161,10 @@ alias lt='ls --tree'
 alias la='ls -la'
 
 # java
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/microsoft-17.jdk/Contents/Home
-export PATH=${PATH}:$JAVA_HOME/bin
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/microsoft-17.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
+# export PATH=${PATH}:$JAVA_HOME/bin
+export PATH=$JAVA_HOME/bin:$PATH
 
 # node version manager (used for kisia-project)
 export NVM_DIR="$HOME/.nvm"
@@ -175,3 +177,14 @@ eval "$(rbenv init -)"
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
+
+# node
+export NODE_OPTIONS=--max_old_space_size=8192
+
+# android studio
+export ANDROID_HOME=/Users/rachelie/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# orbstack
+export PATH="/Applications/OrbStack.app/Contents/MacOS:$PATH"
