@@ -51,3 +51,25 @@ ln -s {path for repo clone}/karabiner/karabiner.json /Users/${USER}/.config/kara
 ln -s {path for repo clone}/vscode/settings.json /Users/${USER}/Library/Application\ Support/Cursor/User/settings.json
 ln -s {path for repo clone}/vscode/settings.json /Users/${USER}/Library/Application\ Support/Cursor/User/keybindings.json
 ```
+
+i think this is the newest one i used
+```shell
+echo "Setting up Karabiner Elements configuration..."
+echo "Removing old configuration if it exists..."
+rm -rf $HOME/.config/karabiner/
+echo "Creating Karabiner configuration symlink…"
+ln -sf $HOME/dotfiles/karabiner $HOME/.config/karabiner
+echo "Karabiner configuration setup complete"
+```
+
+## zsh configurations
+
+```shell
+# autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
+
+# syntax highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+echo "source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+```
